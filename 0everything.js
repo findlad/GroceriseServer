@@ -7,7 +7,7 @@ let nfTarget = ".price__value";
 let coopTarget = ".product-price";
 
 let swEggPrice;
-let swEggPage = "https://voila.ca/products/150353EA/details";
+let swEggPage = "https://voila.ca/products/732323EA/details";
 let swTowelPrice;
 let swTowelPage = "https://voila.ca/products/5026EA/details";
 let swMilkPrice;
@@ -304,7 +304,7 @@ async function runCodeWithDelay() {
   for (const element of randomisedArray) {
     const code = element.code;
     eval(code);
-    await new Promise((resolve) => setTimeout(resolve, 60000));
+    await new Promise((resolve) => setTimeout(resolve, 30000));
   }
 }
 
