@@ -1,0 +1,317 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+
+p { display: flex; color: black; border-radius: 25px; font-family: 'Lora', serif;
+  font-size: 3vh;  max-width: 1000px ; opacity: 0.9 ;  padding-bottom: 10px; margin-top: 0px; margin-bottom: 0px; margin-left: auto; margin-right: auto;} 
+  
+h1  {color: black; border-radius: 25px; font-family: 'Lora', serif;
+    font-size: 3vh;  max-width: 1000px ; opacity: 0.9 ;  margin: auto; text-align: center; padding-bottom: 10px;}
+ 
+body{
+  background-image: linear-gradient(to bottom right, #ffffff, #81a5b6);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+svg {
+    display: block;
+    /* width: 960px;
+    height: 300px; */
+    margin: 0 auto;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: clamp(0.5vh, 0.8vh, 2vh); /* Gap between grid items */
+  max-width: 1100px; /* Limit the maximum width of the grid */
+  margin: auto; /* Center the grid horizontally */
+  padding: 25px;
+  background-color: #6E9CDF;
+  border-radius: 15px;
+  opacity: 0.85;
+}
+
+.grid-shop {
+  display: flex;
+  max-width: 200px;
+  background-color: #A3D5FF;
+ 
+  max-height: 200px;
+  
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(2.5vw, 3vw, 36px);
+}
+
+/* Style the grid items */
+
+.totals {
+  display: flex;
+  max-width: 250px;
+  background-color: #DFF1FF;
+  
+  max-height: 200px;
+ 
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(13px, 2vw, 40px);
+}
+.grid-item {
+  display: flex;
+  max-width: 250px;
+  background-color: #DFF1FF;
+  
+  max-height: 200px;
+ 
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(17px, 2.5vw, 50px);
+}
+
+.titleRow {
+  display: flex;
+  max-width: 200px;
+  background-color: #A3D5FF;
+ 
+  max-height: 200px;
+  
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(16px, 2vw, 36px);
+} 
+
+.grid-title {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center;
+  font-size:clamp(12px, 1.25vw, 36px);
+  max-width: 200px;
+  background-color: #A3D5FF;
+  max-height: 200px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} 
+
+.grid-title::before {
+  content: attr(title); /* Display the title attribute text */
+  position: absolute;
+  vertical-align: middle;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #233B86;
+  opacity: 0.7;
+  color: #fff;
+  padding: 5px;
+  display: none; /* Initially hidden */
+  pointer-events: none; /* Ensure the pseudo-element doesn't interfere with hover events */
+}
+
+.grid-title:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease; }
+  
+.grid-title:hover::before {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle; /* Show the title attribute on hover */
+  }
+
+.cheapest {
+    transform: scale(1.1);
+    /* border: #e13434; */
+    border-color: #e13434; 
+    border-width: 10px;
+    color: #e13434;
+    box-shadow: 1px 2px 4px 5px #000000;
+  }
+
+
+/* Add some hover effect to the grid items */
+.grid-item:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+@media (max-width: 600px) {
+  .grid_container {
+    
+  
+    padding: 10px; /* Reduce padding */
+    max-width: 100%; /* Make it 100% of the viewport width */
+  }
+
+  .grid-item {
+    display: flex;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .grid-title {
+    display: flex;
+    max-height: 50px;
+    padding: 5%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 16
+    
+    
+  }
+  p {font-size: 2vh;}
+  h1{font-size: 2vh;}
+}
+
+
+
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.animate-charcter
+{
+  /* text-transform: uppercase; */
+  background-image: linear-gradient(
+    -225deg,
+    #3747fc 0%,
+    #000000 29%,
+    #f81e1e 67%,
+    rgb(255, 255, 1) 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 250% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5.5s linear infinite;
+    margin: auto;
+    text-align: center;
+    font-size: 13vw;
+  }
+
+  @keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+html, body{
+  height: 100%;
+  font-weight: 800;
+}
+
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+  }
+  
+  .text-copy:nth-child(1){
+    stroke: #ff3a3a;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+  stroke: #e13434;
+  animation-delay: -1.5s;
+}
+
+.text-copy:nth-child(3){
+  stroke: #a63434;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+  stroke: #6c3333;
+  animation-delay: -3.5s;
+}
+
+.text-copy:nth-child(5){
+  stroke: #4ed3fb;
+  animation-delay: -4s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
+}
+
+.post-header { margin-bottom: 30px; position:static; }
+
+.modal {
+  display: none;
+  position: fixed;
+  /* margin: auto; */
+  top: 0;
+  /* left: 0; */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-content: center;
+} 
+
+/* Modal content */
+/* Center the modal content */
+.modal-content {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 80%; /*Adjust the maximum width as needed */
+  
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-self: center;
+}
+
+/* Set dimensions for the canvas element */
+canvas {
+  max-width: 100%;
+  max-height: 80vh;
+  min-height: 300px;
+  height: auto;  /*Allow the chart's height to adapt */
+  
+}
