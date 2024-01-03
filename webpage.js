@@ -173,16 +173,13 @@ const gridItems = document.querySelectorAll(".grid-item");
 const closeModalButton = document.getElementById("closeModalButton");
 const modal = document.getElementById("modalBox");
 
-function closeModal() {
-  modal.style.display = "none";
-}
-
 gridItems.forEach((gridItem) => {
   gridItem.addEventListener("click", () => {
     const thing = gridItem.dataset.item;
     const store = gridItem.dataset.store;
 
     modal.style.display = "flex";
+    document.getElementById("overlay").style.display = "block";
 
     // Clear the previous chart, if any
     const modalContent = document.querySelector(".modal-content");
@@ -194,19 +191,34 @@ gridItems.forEach((gridItem) => {
 });
 
 closeModalButton.addEventListener("click", () => {
-  modal.style.display = "none";
+  closeModel();
 });
 closeModalButton.addEventListener("touchend", () => {
-  modal.style.display = "none";
+  closeModel();
 });
 
 window.addEventListener("click", (event) => {
   if (event.target == modal) {
-    modal.style.display = "none";
+    closeModel();
   }
 });
 window.addEventListener("touchend", (event) => {
   if (event.target == modal) {
-    modal.style.display = "none";
+    closeModal();
   }
 });
+
+document.getElementById("closeButton").addEventListener("click", function () {
+  closeModel();
+});
+
+document.getElementById("overlay").addEventListener("click", function (event) {
+  if (event.target === this) {
+    closeModel();
+  }
+});
+
+function closeModel() {
+  document.getElementById("overlay").style.display = "none";
+  document.getElementById("modal").style.display = "none";
+}
