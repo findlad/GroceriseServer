@@ -49,7 +49,7 @@ let ssRicePage =
   "https://www.realcanadiansuperstore.ca/premium-long-grain-rice/p/20074783001_EA";
 let ssEggPrice;
 let ssEggPage =
-  "https://www.realcanadiansuperstore.ca/free-range-large-eggs/p/20881824001_EA";
+  "https://www.realcanadiansuperstore.ca/free-run-brown-eggs-large/p/20813628001_EA";
 let ssTowelPrice;
 let ssTowelPage =
   "https://www.realcanadiansuperstore.ca/paper-towel-6-12/p/21515966_EA";
@@ -304,7 +304,7 @@ async function runCodeWithDelay() {
   for (const element of randomisedArray) {
     const code = element.code;
     eval(code);
-    await new Promise((resolve) => setTimeout(resolve, 30000));
+    await new Promise((resolve) => setTimeout(resolve, 543000));
   }
 }
 
