@@ -191,15 +191,15 @@ gridItems.forEach((gridItem) => {
 });
 
 closeModalButton.addEventListener("click", () => {
-  closeModel();
+  closeModal();
 });
 closeModalButton.addEventListener("touchend", () => {
-  closeModel();
+  closeModal();
 });
 
 window.addEventListener("click", (event) => {
   if (event.target == modal) {
-    closeModel();
+    closeModal();
   }
 });
 window.addEventListener("touchend", (event) => {
@@ -209,16 +209,16 @@ window.addEventListener("touchend", (event) => {
 });
 
 document.getElementById("closeButton").addEventListener("click", function () {
-  closeModel();
+  closeModal();
 });
 
 document.getElementById("overlay").addEventListener("click", function (event) {
   if (event.target === this) {
-    closeModel();
+    closeModal();
   }
 });
 
-function closeModel() {
+function closeModal() {
   document.getElementById("overlay").style.display = "none";
-  document.getElementById("modal").style.display = "none";
+  document.getElementById("modalBox").style.display = "none";
 }
