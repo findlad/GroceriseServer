@@ -2,8 +2,19 @@
 
 
 
-p { display: flex; color: black; border-radius: 25px; font-family: 'Lora', serif;
-  font-size: 3vh;  max-width: 1000px ; opacity: 0.9 ;  padding-bottom: 10px; margin-top: 0px; margin-bottom: 0px; margin-left: auto; margin-right: auto;} 
+p {
+  color: black; 
+  border-radius: 25px; 
+  font-family: 'Lora', serif;
+  font-size: 3vh;  
+  max-width: 1100px ; 
+  opacity: 0.9 ;  
+  padding-bottom: 10px; 
+  margin-top: -15px; 
+  margin-bottom: 0px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  text-align: center;} 
   
 h1  {color: black; border-radius: 25px; font-family: 'Lora', serif;
     font-size: 3vh;  max-width: 1000px ; opacity: 0.9 ;  margin: auto; text-align: center; padding-bottom: 10px;}
@@ -195,9 +206,10 @@ svg {
 
 /* Close button */
 .close {
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
+  margin: auto;
   padding: 10px;
   cursor: pointer;
 }
