@@ -293,16 +293,6 @@ html, body{
 
 
 /* Close button */
-.close {
-  color: black;
-  font-size: 16px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 10;
-}
 
 
 .modal {
@@ -319,8 +309,7 @@ html, body{
   z-index: 3;
 } 
 
-/* Modal content */
-/* Center the modal content */
+
 .modal-content {
   background-color: #fff;
   padding: 50px;
@@ -334,6 +323,20 @@ html, body{
   justify-self: center;
 }
 
+.close {
+  width: 100px;
+  height: 100px;
+  border: #000000;
+  border-width: 2px;
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
 /* Set dimensions for the canvas element */
 canvas {
   max-width: 100%;
