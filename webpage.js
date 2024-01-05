@@ -5,8 +5,7 @@ let globalArray = [];
 
 async function loadJSON() {
   const response = await fetch("/api");
-  let jsonArray = await response.json();
-  globalArray = jsonArray;
+  globalArray = await response.json();
 }
 
 await loadJSON();
@@ -113,10 +112,10 @@ async function calculateAndDisplayTotal(itemArray) {
 
 // Your JavaScript code for creating the chart
 async function fetchChartJSON(thing, store) {
-  const response = await fetch("priceHistory.json");
-  const priceArray = await response.json();
+  // const response = await fetch("priceHistory.json");
+  // const priceArray = await response.json();
 
-  const categoryPrices = priceArray.filter((entry) => entry.item === thing);
+  const categoryPrices = globalArray.filter((entry) => entry.item === thing);
   const categoryPricesStore = categoryPrices.filter(
     (entry) => entry.shop === store
   );
@@ -212,12 +211,12 @@ closeModalButton.addEventListener("touchend", () => {
 //   closeModal();
 // });
 
-// modal.addEventListener("click", function () {
-//   closeModal();
-// });
-// modal.addEventListener("touchend", function () {
-//   closeModal();
-// });
+modal.addEventListener("click", function () {
+  closeModal();
+});
+modal.addEventListener("touchend", function () {
+  closeModal();
+});
 
 function closeModal() {
   overlay.style.display = "none";
