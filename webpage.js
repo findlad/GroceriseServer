@@ -208,11 +208,19 @@ window.addEventListener("touchend", (event) => {
   }
 });
 
-document.getElementById("closeButton").addEventListener("click", function () {
-  closeModal();
-});
+document
+  .getElementById("closeModalButton")
+  .addEventListener("click", function () {
+    closeModal();
+  });
 
 document.getElementById("overlay").addEventListener("click", function (event) {
+  if (event.target === this) {
+    closeModal();
+  }
+});
+
+document.getElementById("modalBox").addEventListener("click", function (event) {
   if (event.target === this) {
     closeModal();
   }

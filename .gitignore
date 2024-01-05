@@ -1,6 +1,4 @@
 node_modules
-puppeteerLayer/node_modules
-puppeteerLayer/puppeteerLayer.zip
-lambdaFunction/node_modules
 *.zip
 .env
+.cache

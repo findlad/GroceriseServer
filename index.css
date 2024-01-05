@@ -293,6 +293,8 @@ html, body{
 
 /* Close button */
 .close {
+  color: white;
+  font-size: larger;
   position: relative;
   top: 0;
   right: 0;
