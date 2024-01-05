@@ -172,6 +172,7 @@ async function fetchChartJSON(thing, store) {
 const gridItems = document.querySelectorAll(".grid-item");
 const closeModalButton = document.getElementById("closeModalButton");
 const modal = document.getElementById("modalBox");
+const overlay = document.getElementById("overlay");
 
 gridItems.forEach((gridItem) => {
   gridItem.addEventListener("click", () => {
@@ -208,37 +209,26 @@ window.addEventListener("touchend", (event) => {
   }
 });
 
-document
-  .getElementById("closeModalButton")
-  .addEventListener("click", function () {
-    closeModal();
-  });
-
-document.getElementById("overlay").addEventListener("click", function (event) {
-  if (event.target === this) {
-    closeModal();
-  }
+closeModalButton.addEventListener("click", function () {
+  closeModal();
 });
-document
-  .getElementById("overlay")
-  .addEventListener("touchend", function (event) {
-    if (event.target === this) {
-      closeModal();
-    }
-  });
-
-document.getElementById("modalBox").addEventListener("click", function (event) {
-  if (event.target === this) {
-    closeModal();
-  }
+closeModalButton.addEventListener("touchend", function () {
+  closeModal();
 });
-document
-  .getElementById("modalBox")
-  .addEventListener("touchend", function (event) {
-    if (event.target === this) {
-      closeModal();
-    }
-  });
+
+overlay.addEventListener("click", function () {
+  closeModal();
+});
+overlay.addEventListener("touchend", function () {
+  closeModal();
+});
+
+modal.addEventListener("click", function () {
+  closeModal();
+});
+modal.addEventListener("touchend", function () {
+  closeModal();
+});
 
 function closeModal() {
   document.getElementById("overlay").style.display = "none";
