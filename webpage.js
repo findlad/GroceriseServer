@@ -219,12 +219,26 @@ document.getElementById("overlay").addEventListener("click", function (event) {
     closeModal();
   }
 });
+document
+  .getElementById("overlay")
+  .addEventListener("touchend", function (event) {
+    if (event.target === this) {
+      closeModal();
+    }
+  });
 
 document.getElementById("modalBox").addEventListener("click", function (event) {
   if (event.target === this) {
     closeModal();
   }
 });
+document
+  .getElementById("modalBox")
+  .addEventListener("touchend", function (event) {
+    if (event.target === this) {
+      closeModal();
+    }
+  });
 
 function closeModal() {
   document.getElementById("overlay").style.display = "none";
