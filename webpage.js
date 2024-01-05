@@ -179,12 +179,12 @@ gridItems.forEach((gridItem) => {
     const thing = gridItem.dataset.item;
     const store = gridItem.dataset.store;
 
+    overlay.style.display = "block";
     modal.style.display = "flex";
-    document.getElementById("overlay").style.display = "block";
 
     // Clear the previous chart, if any
-    const modalContent = document.querySelector(".modal-content");
-    modalContent.innerHTML = '<canvas id="graph"></canvas>';
+    const canvasBox = document.querySelector(".canvasBox");
+    canvasBox.innerHTML = '<canvas id="graph"></canvas>';
 
     // Add your chart creation code here based on the thing and store
     fetchChartJSON(thing, store);
@@ -198,39 +198,28 @@ closeModalButton.addEventListener("touchend", () => {
   closeModal();
 });
 
-window.addEventListener("click", (event) => {
-  if (event.target == modal) {
-    closeModal();
-  }
-});
-window.addEventListener("touchend", (event) => {
-  if (event.target == modal) {
-    closeModal();
-  }
-});
+// window.addEventListener("click", () => {
+//   closeModal();
+// });
+// window.addEventListener("touchend", () => {
+//   closeModal();
+// });
 
-closeModalButton.addEventListener("click", function () {
-  closeModal();
-});
-closeModalButton.addEventListener("touchend", function () {
-  closeModal();
-});
+// overlay.addEventListener("click", function () {
+//   closeModal();
+// });
+// overlay.addEventListener("touchend", function () {
+//   closeModal();
+// });
 
-overlay.addEventListener("click", function () {
-  closeModal();
-});
-overlay.addEventListener("touchend", function () {
-  closeModal();
-});
-
-modal.addEventListener("click", function () {
-  closeModal();
-});
-modal.addEventListener("touchend", function () {
-  closeModal();
-});
+// modal.addEventListener("click", function () {
+//   closeModal();
+// });
+// modal.addEventListener("touchend", function () {
+//   closeModal();
+// });
 
 function closeModal() {
-  document.getElementById("overlay").style.display = "none";
-  document.getElementById("modalBox").style.display = "none";
+  overlay.style.display = "none";
+  modal.style.display = "none";
 }
