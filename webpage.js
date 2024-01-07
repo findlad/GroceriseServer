@@ -204,12 +204,12 @@ closeModalButton.addEventListener("touchend", () => {
 //   closeModal();
 // });
 
-// overlay.addEventListener("click", function () {
-//   closeModal();
-// });
-// overlay.addEventListener("touchend", function () {
-//   closeModal();
-// });
+overlay.addEventListener("click", function () {
+  closeModal();
+});
+overlay.addEventListener("touchend", function () {
+  closeModal();
+});
 
 modal.addEventListener("click", function () {
   closeModal();
