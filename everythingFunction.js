@@ -34,7 +34,7 @@ function getPrice(targetPage, target, vendor, type) {
     await page.goto(targetPage);
     try {
       // const textSelector = target;
-      await delay(10000);
+      await delay(5000);
       const htmlCode = await page.content();
       // console.log(htmlCode);
       // fs.writeFile("html.txt", htmlCode, "utf-8", (err) => {
@@ -394,7 +394,7 @@ async function runCodeWithDelay() {
   for (const element of randomisedArray) {
     const code = element.code;
     eval(code);
-    await new Promise((resolve) => setTimeout(resolve, 60000));
+    await new Promise((resolve) => setTimeout(resolve, 43700));
   }
 }
 
