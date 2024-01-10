@@ -190,10 +190,12 @@ gridItems.forEach((gridItem) => {
   });
 });
 
-closeModalButton.addEventListener("click", () => {
+closeModalButton.addEventListener("click", (event) => {
+  event.stopPropagation();
   closeModal();
 });
-closeModalButton.addEventListener("touchend", () => {
+closeModalButton.addEventListener("touchend", (event) => {
+  event.stopPropagation();
   closeModal();
 });
 
@@ -204,17 +206,22 @@ closeModalButton.addEventListener("touchend", () => {
 //   closeModal();
 // });
 
-overlay.addEventListener("click", function () {
-  closeModal();
-});
-overlay.addEventListener("touchend", function () {
+overlay.addEventListener("click", function (event) {
+  event.stopPropagation();
   closeModal();
 });
 
-modal.addEventListener("click", function () {
+overlay.addEventListener("touchend", function (event) {
+  event.stopPropagation();
+  closeModal();
+});
+
+modal.addEventListener("click", function (event) {
+  event.stopPropagation();
   closeModal();
 });
 modal.addEventListener("touchend", function () {
+  event.stopPropagation();
   closeModal();
 });
 
