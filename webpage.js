@@ -192,10 +192,12 @@ gridItems.forEach((gridItem) => {
 
 closeModalButton.addEventListener("click", (event) => {
   event.stopPropagation();
+  event.preventDefault();
   closeModal();
 });
 closeModalButton.addEventListener("touchend", (event) => {
   event.stopPropagation();
+  event.preventDefault();
   closeModal();
 });
 
@@ -208,20 +210,24 @@ closeModalButton.addEventListener("touchend", (event) => {
 
 overlay.addEventListener("click", function (event) {
   event.stopPropagation();
+  event.preventDefault();
   closeModal();
 });
 
 overlay.addEventListener("touchend", function (event) {
   event.stopPropagation();
+  event.preventDefault();
   closeModal();
 });
 
 modal.addEventListener("click", function (event) {
   event.stopPropagation();
+  event.preventDefault();
   closeModal();
 });
 modal.addEventListener("touchend", function () {
   event.stopPropagation();
+  event.preventDefault();
   closeModal();
 });
 
