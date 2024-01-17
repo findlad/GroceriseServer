@@ -5,7 +5,7 @@ import fs, { readFile, readFileSync } from "fs";
 dotenv.config();
 
 const connectionString = process.env.MONGO_URL;
-const response = fs.readFileSync("walmartTemplate.json", "utf-8");
+const response = fs.readFileSync("superstoreTemplate.json", "utf-8");
 const priceArray = JSON.parse(response);
 const db = await mongoose.connect(connectionString);
 

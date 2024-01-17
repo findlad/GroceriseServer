@@ -1,0 +1,32 @@
+[
+  {
+    "item": "milk",
+    "shop": "Superstore",
+    "cost": "5.59",
+    "day": "2024-01-17T21:01:58.620Z"
+  },
+  {
+    "item": "milk",
+    "shop": "NoFrills",
+    "cost": "5.59",
+    "day": "2024-01-17T21:01:58.620Z"
+  },
+  {
+    "item": "egg",
+    "shop": "Superstore",
+    "cost": "6.99",
+    "day": "2024-01-17T21:01:58.620Z"
+  },
+  {
+    "item": "rice",
+    "shop": "Superstore",
+    "cost": "7.29",
+    "day": "2024-01-17T21:01:58.620Z"
+  },
+  {
+    "item": "towel",
+    "shop": "Superstore",
+    "cost": "19.99",
+    "day": "2024-01-17T21:01:58.620Z"
+  }
+]
