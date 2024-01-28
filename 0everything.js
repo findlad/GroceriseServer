@@ -65,7 +65,7 @@ let ssButterPage =
 
 let wmEggPrice;
 let wmEggPage =
-  "https://www.walmart.ca/en/ip/goldegg-free-run-large-eggs/6000196823370";
+  "https://www.walmart.ca/en/ip/Great-Value-Organic-Free-run-Large-Brown-Eggs/6000196119460";
 let wmTowelPrice;
 let wmTowelPage =
   "https://www.walmart.ca/en/ip/bounty-select-a-size-paper-towels-6-double-rolls-white-90-sheets-per-roll/6000205967050";
