@@ -20,7 +20,8 @@ h1  {color: black; border-radius: 25px; font-family: 'Lora', serif;
     font-size: 3vh;  max-width: 1000px ; opacity: 0.9 ;  margin: auto; text-align: center; padding-bottom: 10px;}
  
 body{
-  background-image: linear-gradient(to bottom right, #ffffff, #81a5b6);
+  background-image: linear-gradient(to bottom right, #f7f7ef, #ccc78d);
+  
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -42,7 +43,7 @@ svg {
   max-width: 1100px; /* Limit the maximum width of the grid */
   margin: auto; /* Center the grid horizontally */
   padding: 25px;
-  background-color: #6E9CDF;
+  background-color: #22766a;
   border-radius: 15px;
   opacity: 0.85;
 }
@@ -50,7 +51,7 @@ svg {
 .grid-shop {
   display: flex;
   max-width: 200px;
-  background-color: #A3D5FF;
+  background-color: #a9d7d0d3;
  
   max-height: 200px;
   
@@ -67,7 +68,7 @@ svg {
 .totals {
   display: flex;
   max-width: 250px;
-  background-color: #DFF1FF;
+  background-color: #E2E1CD;
   
   max-height: 200px;
  
@@ -81,7 +82,7 @@ svg {
 .grid-item {
   display: flex;
   max-width: 250px;
-  background-color: #DFF1FF;
+  background-color: #E2E1CD;
   
   max-height: 200px;
  
@@ -96,7 +97,7 @@ svg {
 .titleRow {
   display: flex;
   max-width: 200px;
-  background-color: #A3D5FF;
+  background-color: #a9d7d0d3;
  
   max-height: 200px;
   
@@ -116,7 +117,7 @@ svg {
   text-align: center;
   font-size:clamp(12px, 1.25vw, 36px);
   max-width: 200px;
-  background-color: #A3D5FF;
+  background-color: #a9d7d0d3;
   max-height: 200px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -209,10 +210,10 @@ svg {
   /* text-transform: uppercase; */
   background-image: linear-gradient(
     -225deg,
-    #3747fc 0%,
-    #000000 29%,
-    #f81e1e 67%,
-    rgb(255, 255, 1) 100%
+    #91c287 0%,
+    #53a250 29%,
+    #609572 67%,
+    #558465 100%
     );
     background-size: auto auto;
     background-clip: border-box;
