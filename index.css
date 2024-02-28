@@ -36,6 +36,11 @@ svg {
     margin: 0 auto;
 }
 
+.logoContainer{
+  display: flex ;
+  max-width: 400px ;
+  justify-content: center;
+}
 .grid_container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
