@@ -118,6 +118,8 @@ let swCoffeePrice;
 let swCoffeePage = "https://voila.ca/products/280087EA/details";
 let swButterPrice;
 let swButterPage = "https://voila.ca/products/483559EA/details";
+let swSugarPrice;
+let swSugarPage = "https://voila.ca/products/508600EA/details";
 
 let ssBranPrice;
 let ssBranPage =
@@ -152,6 +154,9 @@ let ssCoffeePage =
 let ssButterPrice;
 let ssButterPage =
   "https://www.realcanadiansuperstore.ca/unsalted-butter/p/20316543002_EA";
+let ssSugarPrice;
+let ssSugarPage =
+  "https://www.realcanadiansuperstore.ca/granulated-white-sugar/p/20032352_EA";
 
 let wmEggPrice;
 let wmEggPage =
@@ -186,6 +191,9 @@ let wmCoffeePage =
 let wmButterPrice;
 let wmButterPage =
   "https://www.walmart.ca/en/ip/Great-Value-Unsalted-Butter/10054933";
+let wmSugarPrice;
+let wmSugarPage =
+  "https://www.walmart.ca/en/ip/Redpath-Special-Fine-Granulated-Sugar/10053833";
 
 let nfEggPrice;
 let nfEggPage =
@@ -217,6 +225,9 @@ let nfCoffeePage =
   "https://www.nofrills.ca/original-fine-grind-coffee/p/20875767_EA";
 let nfButterPrice;
 let nfButterPage = "https://www.nofrills.ca/unsalted-butter/p/20316543002_EA";
+let nfSugarPrice;
+let nfSugarPage =
+  "https://www.nofrills.ca/granulated-white-sugar/p/20032352_EA";
 
 let coopEggPrice;
 let coopEggPage = "https://shoponline.calgarycoop.com/crowfoot#/product/563";
@@ -280,6 +291,9 @@ const arrayOfCode = [
   {
     code: 'ssButterPrice = getPrice(ssButterPage, ssTarget, "Superstore", "butter");',
   },
+  {
+    code: 'ssSugarPrice = getPrice(ssSugarPage, ssTarget, "Superstore", "sugar");',
+  },
   { code: 'swMilkPrice = getPrice(swMilkPage, swTarget, "Safeway", "milk");' },
   { code: 'swEggPrice = getPrice(swEggPage, swTarget, "Safeway", "egg");' },
   {
@@ -304,6 +318,9 @@ const arrayOfCode = [
   },
   {
     code: 'swButterPrice = getPrice(swButterPage, swTarget, "Safeway", "butter");',
+  },
+  {
+    code: 'swSugarPrice = getPrice(swSugarPage, swTarget, "Safeway", "sugar");',
   },
   { code: 'wmMilkPrice = getPrice(wmMilkPage, wmTarget, "Walmart", "milk");' },
   { code: 'wmEggPrice = getPrice(wmEggPage, wmTarget, "Walmart", "egg");' },
@@ -330,6 +347,9 @@ const arrayOfCode = [
   {
     code: 'wmButterPrice = getPrice(wmButterPage, wmTarget, "Walmart", "butter");',
   },
+  {
+    code: 'wmSugarPrice = getPrice(wmSugarPage, wmTarget, "Walmart", "sugar");',
+  },
   { code: 'nfMilkPrice = getPrice(nfMilkPage, nfTarget, "NoFrills", "milk");' },
   { code: 'nfEggPrice = getPrice(nfEggPage, nfTarget, "NoFrills", "egg");' },
   {
@@ -354,6 +374,9 @@ const arrayOfCode = [
   },
   {
     code: 'nfButterPrice = getPrice(nfButterPage, nfTarget, "NoFrills", "butter");',
+  },
+  {
+    code: 'nfSugarPrice = getPrice(nfSugarPage, nfTarget, "NoFrills", "sugar");',
   },
   { code: 'coopEggPrice = getPrice(coopEggPage, coopTarget, "Coop", "egg");' },
   {
