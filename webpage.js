@@ -31,7 +31,9 @@ let itemArray = [];
 async function loading() {
   //console.log(globalArray);
   shopArray = [...new Set(globalArray.map((item) => item.shop))];
+  console.log("shop array: ", shopArray);
   itemArray = [...new Set(globalArray.map((item) => item.item))];
+  console.log("item array: ", itemArray);
   await itemArray.forEach(async (item) => {
     await shopArray.forEach(async (shop) => {
       await fetchPricesJSON(item, shop);

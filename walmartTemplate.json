@@ -1,68 +1,75 @@
 [
   {
+    "item": "egg",
+    "shop": "Walmart",
+    "cost": "7.78",
+    "day": "2024-03-08T23:40:56.764Z"
+  },
+
+  {
+    "item": "towel",
+    "shop": "Walmart",
+    "cost": "15.97",
+    "day": "2024-03-08T23:40:56.764Z"
+  },
+  {
     "item": "milk",
     "shop": "Walmart",
     "cost": "5.59",
-    "day": "2024-02-12T23:31:54.208Z"
+    "day": "2024-03-08T23:40:56.764Z"
   },
   {
-    "item": "egg",
+    "item": "coke",
     "shop": "Walmart",
-    "cost": "7.88",
-    "day": "2024-02-22T23:40:56.764Z"
-  },
-  {
-    "item": "rice",
-    "shop": "Walmart",
-    "cost": "5.77",
-    "day": "2024-02-22T21:01:58.620Z"
+    "cost": "2.67",
+    "day": "2024-03-08T23:40:56.764Z"
   },
   {
     "item": "chicken",
     "shop": "Walmart",
     "cost": "15.00",
-    "day": "2024-02-22T21:01:58.620Z"
+    "day": "2024-03-08T23:40:56.764Z"
   },
   {
-    "item": "towel",
+    "item": "rice",
     "shop": "Walmart",
-    "cost": "18.47",
-    "day": "2024-02-22T23:31:54.208Z"
-  },
-  {
-    "item": "coke",
-    "shop": "Walmart",
-    "cost": "2.47",
-    "day": "2024-02-22T23:40:56.764Z"
+    "cost": "6.97",
+    "day": "2024-03-08T23:40:56.764Z"
   },
   {
     "item": "bran",
     "shop": "Walmart",
-    "cost": "5.47",
-    "day": "2024-02-22T21:01:58.620Z"
+    "cost": "6.97",
+    "day": "2024-03-08T23:40:56.764Z"
   },
   {
     "item": "pizza",
     "shop": "Walmart",
     "cost": "6.97",
-    "day": "2024-02-22T21:01:58.620Z"
+    "day": "2024-03-08T23:40:56.764Z"
   },
   {
     "item": "chips",
     "shop": "Walmart",
-    "cost": "3.97",
-    "day": "2024-02-22T23:40:56.764Z"
+    "cost": "2.77",
+    "day": "2024-03-08T23:40:56.764Z"
   },
   {
     "item": "coffee",
     "shop": "Walmart",
     "cost": "20.97",
-    "day": "2024-02-22T21:01:58.620Z"
+    "day": "2024-03-08T23:40:56.764Z"
   },
   {
     "item": "butter",
     "shop": "Walmart",
     "cost": "5.48",
-    "day": "2024-02-22T21:01:58.620Z"
+    "day": "2024-03-08T23:40:56.764Z"
+  },
+  {
+    "item": "sugar",
+    "shop": "walmart",
+    "cost": "2.77",
+    "day": "2024-03-08T23:40:56.764Z"
   }
 ]
