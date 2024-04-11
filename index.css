@@ -356,19 +356,13 @@ canvas {
   display: flex;
   margin: auto;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  align-content: center;
-  width: 90%;
+  width: 100%;
   gap: 10px;
 
 }
-.footerLeft{
-width: 40%;
-align-items: flex-start;
-padding: 20px;
-padding-left: 40px;
-}
+
 .topBlurb {
   color: #00483D; 
   border-radius: 25px; 
@@ -382,7 +376,7 @@ padding-left: 40px;
 
 .footLeftTitle{
   /* padding: 20px; */
-  width:80%;
+  width:90%;
   font-family: 'Inter';
   font-size: clamp(20px, 1.5vw, 45px);
   text-align: left;
@@ -392,14 +386,55 @@ padding-left: 40px;
 
   .footblurb{
   /* padding: 20px; */
-  width:80%;
+  width:90%;
   font-family: 'Inter';
-  font-size: clamp(16px, 1vw, 30px);
+  font-size: clamp(16px, 1vw, 25px);
   text-align: left;
 }
-.footerRight{
-  width: 40%;
+.footerLeft{
+  width: 60%;
   align-items: flex-start;
-  padding: 20px;
-  padding-right: 40px;
+  padding: 10px;
+  padding-left: 10%;
+  }
+.footerRight{
+  width: 20%;
+  align-items: flex-start;
+  font-size: clamp(14px, 0.8vw, 20px);
+  padding: 10px;
+  padding-right: 10%;
+  }
+  .acknowledgementContainer{
+    border-top: 2px solid #000000;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    gap: 10px;
+    
+  }
+  .acknowledgement{
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    padding-left: 40px;
+    font-size: clamp(16px, 1vw, 25px);
+    padding: 5%
+  }
+
+  .smallLogo{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: clamp(200px,25%, 30%);
+    height: auto;
+    gap: 10px;
+    padding: 5%;
+  }
+  .smallLogo img {
+    width: 100%;
+    height: auto;
   }
