@@ -256,6 +256,8 @@ let coopCoffeePage =
 let coopButterPrice;
 let coopButterPage =
   "https://shoponline.calgarycoop.com/crowfoot#/product/2200";
+let coopSugarPrice;
+let coopSugarPage = "https://shoponline.calgarycoop.com/crowfoot#/product/7514";
 
 const arrayOfCode = [
   {
@@ -408,6 +410,9 @@ const arrayOfCode = [
   },
   {
     code: 'coopButterPrice = getPrice(coopButterPage, coopTarget, "Coop", "butter");',
+  },
+  {
+    code: 'coopSugarPrice = getPrice(coopSugarPage, coopTarget, "Coop", "sugar");',
   },
 ];
 
