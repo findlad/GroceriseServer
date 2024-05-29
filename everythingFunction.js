@@ -257,7 +257,7 @@ let coopButterPrice;
 let coopButterPage =
   "https://shoponline.calgarycoop.com/crowfoot#/product/2200";
 let coopSugarPrice;
-let coopSugarPage = "https://shoponline.calgarycoop.com/crowfoot#/product/7514";
+let coopSugarPage = "https://shoponline.calgarycoop.com/crowfoot#/product/484";
 
 const arrayOfCode = [
   {
